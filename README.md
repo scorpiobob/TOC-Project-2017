@@ -47,15 +47,32 @@ python3 app.py
 ## Usage
 The initial state is set to `user`.
 
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
+Every time `user` state is triggered to `advance` to another state, 
+till to the state6(die)
+it will `go_back` to `user` state after the bot replies corresponding message.
 
 * user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
+	* Input: "birth"
+		* Reply: "I'm an egg,please give bone or give fish to me"
+* state1
 
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
+	* Input: "give bone"
+		* Reply: "I'm a puppy,feed me"
+	* Input: "give fish"
+		* Reply: "I'm a kitten,let me big"
+* state2
+	* Input: "feed"
+		* Reply: "I'm dog"
+* state3
+	* Input: "die"
+		* Reply: "I'm dead,birth me again"
+* state4
+	* Input: "big"
+		* Reply: "I'm a cat"
+* state5
+	* Input: "die"
+		* Reply: "I'm dead,birth me again"
 
 
 ## Author
-[Lee-W](https://github.com/Lee-W)
+[scorpiobob](https://github.com/scorpiobob)
